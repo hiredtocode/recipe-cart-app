@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-cart-app';
-  loadedLink = 'recipes';
+  loadedLink = 'recipes'; // the default link name
 
   onNavigate(link: string) {
-    this.loadedLink = link;
+    this.loadedLink = link; // this link is passed down via $event from onNavigate() method
   }
 }
