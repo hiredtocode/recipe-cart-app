@@ -8,8 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Output() linkSelected = new EventEmitter<string>();
 
-  linkClicked(link: string) {
-    this.linkSelected.emit(link);
+  linkClicked(linkName: string) {
+    this.linkSelected.emit(linkName);
   }
   constructor() {}
 
